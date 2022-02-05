@@ -1,0 +1,46 @@
+Sequencia para o GitHub
+Abrir gitbash dentro da pasta desejada
+- git init
+- git status
+- git add .
+- git commit -m "commit inicial"
+
+Criar o repositorio no GitHub(Web), após copiar o endereço gerado
+- git remote add origin 'colar o link do github'
+- git push
+- colar a sugestão do git para a branch master
+- git reflog --> para ver qual a versão mais recente
+
+Para voltar na versão que esta sem "erro"
+- git reset --hard "id que aparece no reflog"
+
+para voltar a versão novamente, digite o git reflog e selecione a versão pelo ID
+e acesse peloo git reset --hard id
+
+Para criar uma nova branch
+- git branch staging //o nome staging é por convensão, mas pode ser qualquer nome
+- git branch // relaciona as branchs disponiveis e em *na branch que esta acessada
+- git checkout staging // move de branch
+
+Para unir a alteração feita na branch Staging com a master, deve acessar a branch
+master através do git checkout master
+- git pull //vai trazer as atualizações do servidor para sua maquina
+- git merge staging // vai unir os codigos das duas branchs
+- git push
+
+Criar nova branch com base na branch master
+- git checkout -b nome_da_branch
+- git branch // para verificar se o comando funcionou e se situar na branch
+
+Para fazer um pull request(envio para aprovação)
+após subir o codigo no github clicar no botão "compare & pull request"
+set a opção de mergiar da branch staging para a branch master no botão base:
+inserir na interface o titulo e descrição da nova funcionalidade
+clique em "Create pull request"
+
+***GIT IGNORE***
+crie um arquivo que só pode ser feito no terminal do git
+- touch .gitignore
+abra o arquivo que foi criado e insira a pasta ou arquivo a ser ignorado
+e salve, importante adiconar e subir o arquivo gitignore pois ele que vai controlar
+os arquivos ocultos(ignorados)
