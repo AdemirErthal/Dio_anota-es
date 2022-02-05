@@ -1,2 +1,2 @@
-# Dio_anota-es
+# Dio_anotacoes
 Anotações dos cursos da DIO
